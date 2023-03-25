@@ -41,7 +41,8 @@ macro_clean = {
            DateJOIN = lubridate::year(Date) * 100 + lubridate::month(Date),
            Delinquencies_Per_Capita = Consumer_Credit_Total_Delinquencies / Population_Total_Mil_NSA,
            ) %>% 
-    select(-Consumer_Credit_Total_Delinquencies, -Population_Total_Mil_NSA)
+    select(-Consumer_Credit_Total_Delinquencies, -Population_Total_Mil_NSA,
+           -Date)
 }
 
 # write into files
