@@ -1,12 +1,4 @@
----
-title: "Cox PH Demo"
-author: "Marie Tuft"
-date: "`r Sys.Date()`"
-output: html_document
----
 
-
-```{r setup}
 #--Demo code
 #Some of this was borrowed from the Chapter 11 lab at https://urldefense.com/v3/__https://www.statlearning.com/resources-second-edition__;!!DZ3fjg!42wNAPQGaiwrd4CpceClNQvWakbAYbTmseIpHotHCl4ISyX1R5aTKrPPn7Y2R_7YGxbsxYQ1sWZ9NHd4Sg$ 
 
@@ -157,5 +149,4 @@ nevents <- predict(fit.partial,predictondata,type="expected")
 exp(-nevents) 
 
 
-```
 
